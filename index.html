@@ -17,6 +17,11 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
 
+  <!-- Icon -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+    crossorigin="anonymous" />
+
   <title>Hello, world!</title>
 </head>
 
@@ -40,7 +45,7 @@
         <form id="splitter-form">
           <div class="form-group">
             <label for="task">Insert amount of money</label>
-            <input type="number" id="split-money" class="form-control form-control-lg" />
+            <input type="number" id="input-amount" class="form-control form-control-lg" />
           </div>
           <button type="submit" class="btn btn-lg btn-block btn-success"> SPLIT! </button>
         </form>
@@ -49,16 +54,21 @@
       <div class="card-body">
         <h3 class="text-black">Result</h3>
 
-        <ul class="list-group" id="split-list">
-          <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
-            Value dari task input
-          </li>
-        </ul>
+        <div class="card text-left">
+          <div class="card-header">
+            1050 Dollar
+          </div>
+          <div class="card-body">
+            <p class="card-text"><i class="fas fa-dollar-sign text-success"></i>100 5 Lembar</p>
+            <p class="card-text"><i class="fas fa-dollar-sign text-success"></i>50 1 Lembar</p>
+          </div>
+        </div>
+
       </div>
 
       <div class="card-body">
         <button class="btn btn-outline-danger btn-block" type="button" data-toggle="collapse"
-          data-target="#collapseClearButton" aria-expanded="false" aria-controls="collapseClearButton">
+          data-target="#collapseClearButton" aria-expanded="false" aria-controls="collapseClearButton" id="clear-list">
           Clear Split List
         </button>
       </div>
