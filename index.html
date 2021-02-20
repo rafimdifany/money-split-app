@@ -13,6 +13,10 @@
   <!-- My CSS -->
   <link rel="stylesheet" href="style.css">
 
+  <!-- My Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+
   <title>Hello, world!</title>
 </head>
 
@@ -24,6 +28,23 @@
     </div>
   </nav>
   <!-- End of Navbar -->
+
+  <div class="container">
+    <!-- Content -->
+    <div class="content">
+      <form>
+        <div class="form-group mt-5">
+          <label for="inputAmountofMoney">Amount of Money (Dollar)</label>
+          <input type="number" class="form-control" id="inputAmountofMoney">
+          <small id="amountHelp" class="form-text text-muted">Input your amount of money and we will split it into piece
+            of small amount.</small>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+      <hr>
+    </div>
+    <!-- End Content -->
+  </div>
 
 
 
