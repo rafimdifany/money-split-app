@@ -31,17 +31,37 @@
 
   <div class="container">
     <!-- Content -->
-    <div class="content">
-      <form>
-        <div class="form-group mt-5">
-          <label for="inputAmountofMoney">Amount of Money (Dollar)</label>
-          <input type="number" class="form-control" id="inputAmountofMoney">
-          <small id="amountHelp" class="form-text text-muted">Input your amount of money and we will split it into piece
-            of small amount.</small>
-        </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
-      </form>
-      <hr>
+    <div class="card text-center bg-light rounded-0 mt-5">
+      <h5 class="card-header text-black">
+        Money Splitter
+      </h5>
+
+      <div class="card-body text-black">
+        <form id="splitter-form">
+          <div class="form-group">
+            <label for="task">Insert amount of money</label>
+            <input type="number" id="split-money" class="form-control form-control-lg" />
+          </div>
+          <button type="submit" class="btn btn-lg btn-block btn-success"> SPLIT! </button>
+        </form>
+      </div>
+
+      <div class="card-body">
+        <h3 class="text-black">Result</h3>
+
+        <ul class="list-group" id="split-list">
+          <li class="list-group-item d-flex justify-content-between align-items-center mb-1">
+            Value dari task input
+          </li>
+        </ul>
+      </div>
+
+      <div class="card-body">
+        <button class="btn btn-outline-danger btn-block" type="button" data-toggle="collapse"
+          data-target="#collapseClearButton" aria-expanded="false" aria-controls="collapseClearButton">
+          Clear Split List
+        </button>
+      </div>
     </div>
     <!-- End Content -->
   </div>
